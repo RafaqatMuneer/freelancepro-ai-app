@@ -356,29 +356,153 @@ Install:
 
 ```bash
 git clone https://github.com/RafaqatMuneer/freelancepro-ai-app.git
-
+```
+```bash
 cd freelancepro-ai-app
-Install Dependencies
+```
+---
+
+## Install Dependencies
 
 Using npm:
 
+```bash
 npm install
+```
 
-or using Bun:
+Or using Bun:
 
+```bash
 bun install
-Configure Environment Variables
+```
 
-Create a .env file:
+---
 
+## Configure Environment Variables
+
+Create a `.env` file in the project root:
+
+```env
 GEMINI_API_KEY=your_gemini_api_key
-Run Development Server
+```
+
+> **Important:** Never commit your `.env` file or actual API key to GitHub. Use environment variables for production deployment.
+
+---
+
+## Run Development Server
+
+Using npm:
+
+```bash
 npm run dev
+```
 
-or:
+Or using Bun:
 
+```bash
 bun run dev
-Build Production Version
+```
+
+---
+
+## Build Production Version
+
+Using npm:
+
+```bash
 npm run build
-Start Production Server
+```
+
+Or using Bun:
+
+```bash
+bun run build
+```
+
+---
+
+## Start Production Server
+
+Using npm:
+
+```bash
 npm run start
+```
+
+Or using Bun:
+
+```bash
+bun run start
+```
+
+---
+
+## 📂 Project Structure
+
+```text
+freelancepro-ai
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── services
+│   └── lib
+│
+├── server.ts
+├── package.json
+├── vite.config.ts
+├── README.md
+└── screenshots
+```
+
+---
+
+## 🔮 Future Improvements
+
+Possible future enhancements include:
+
+* n8n automation workflow integration
+* Automatic job collection from freelance platforms
+* Proposal performance tracking
+* AI-based proposal scoring
+* Email notifications
+* Freelancer analytics dashboard
+
+---
+
+## 👨‍💻 Developer
+
+**Rafaqat Muneer**
+
+AI Application Development Project
+
+---
+
+## ⭐ Project Summary
+
+FreelancePro AI demonstrates how Generative AI can be integrated into a real-world application to solve a practical problem faced by freelancers.
+
+The application provides an end-to-end workflow:
+
+```text
+User Authentication
+        ↓
+Freelancer Profile
+        ↓
+Client Job Analysis
+        ↓
+AI Proposal Generation
+        ↓
+Proposal Management
+        ↓
+Client Management
+        ↓
+Dashboard Insights
+```
+
+The project combines AI, cloud services, databases, authentication, and modern web development into a complete, functional, and publicly deployed application.
+
+
+
+
