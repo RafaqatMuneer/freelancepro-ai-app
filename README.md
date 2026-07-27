@@ -441,7 +441,7 @@ bun run start
 ## 📂 Project Structure
 
 ```text
-freelancepro-ai
+freelancepro-ai-app
 │
 ├── src
 │   ├── components
