@@ -1,0 +1,6 @@
+{
+  "name": "FreelancePro AI",
+  "description": "AI-powered assistant for freelancers and students to analyze job descriptions, generate proposals, and manage client projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

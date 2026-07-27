@@ -1,0 +1,69 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "User profile settings and bio details",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "title": { "type": "string" },
+        "bio": { "type": "string" },
+        "skills": { "type": "array" },
+        "experience": { "type": "string" },
+        "services": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["name", "email"]
+    },
+    "Proposal": {
+      "title": "Proposal",
+      "description": "Freelance job proposal document",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "jobTitle": { "type": "string" },
+        "jobDescription": { "type": "string" },
+        "analysis": { "type": "object" },
+        "generatedProposal": { "type": "string" },
+        "status": { "type": "string", "enum": ["Draft", "Proposal Sent", "In Discussion", "Won", "Lost"] },
+        "followUpDate": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "jobTitle", "generatedProposal", "status"]
+    },
+    "Client": {
+      "title": "Client Record",
+      "description": "Freelance client management record",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "clientName": { "type": "string" },
+        "project": { "type": "string" },
+        "status": { "type": "string", "enum": ["Lead", "Active", "On Hold", "Completed", "Inactive"] },
+        "notes": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "clientName", "project", "status"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profile settings stored by Firebase UID"
+    },
+    "/proposals/{proposalId}": {
+      "schema": "Proposal",
+      "description": "Job proposals created by authenticated user"
+    },
+    "/clients/{clientId}": {
+      "schema": "Client",
+      "description": "Client records created by authenticated user"
+    }
+  }
+}
