@@ -303,6 +303,7 @@ Users can only access:
 ## 1. Authentication
 
 ![Login](screenshots/login.PNG)
+<img src="screenshots/login.PNG" alt="Login" width="600"/>
 User authentication through Google and Email/Password.
 
 ---
