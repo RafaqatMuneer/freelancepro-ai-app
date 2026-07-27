@@ -1,6 +1,6 @@
 # 🚀 FreelancePro AI — AI-Powered Freelance Proposal & Client Assistant
 
-![FreelancePro AI Banner](screenshots/banner.png)
+![FreelancePro AI Banner](screenshots/banner.PNG)
 
 ## 🌐 Live Application
 
@@ -309,7 +309,7 @@ User authentication through Google and Email/Password.
 
 ## 2. Dashboard
 
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/dashboard.PNG)
 
 Main dashboard showing user activity and application overview.
 
@@ -317,7 +317,7 @@ Main dashboard showing user activity and application overview.
 
 ## 3. AI Job Analysis
 
-![Job Analysis](screenshots/job-analysis.png)
+![Job Analysis](screenshots/job-analysis.PNG)
 
 AI analyzes client requirements and extracts important project details.
 
@@ -325,7 +325,7 @@ AI analyzes client requirements and extracts important project details.
 
 ## 4. AI Proposal Generation
 
-![Proposal Generation](screenshots/proposal-generation.png)
+![Proposal Generation](screenshots/proposal-generation.PNG)
 
 Gemini generates a personalized freelance proposal.
 
@@ -333,7 +333,7 @@ Gemini generates a personalized freelance proposal.
 
 ## 5. Client Management
 
-![Client Management](screenshots/client-management.png)
+![Client Management](screenshots/client-management.PNG)
 
 Users can manage clients and connect proposals.
 
