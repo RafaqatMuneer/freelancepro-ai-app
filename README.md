@@ -175,3 +175,210 @@ The API key is stored securely using environment variables and is never exposed 
 # AI System Instructions / Prompt
 
 The AI assistant follows these instructions:
+You are an expert freelance proposal assistant.
+
+Your task is to analyze client job descriptions and help freelancers create professional, personalized proposals.
+
+You must:
+
+Understand the client's business requirements.
+Extract technical and non-technical requirements.
+Identify required skills.
+Compare requirements with freelancer profile skills.
+Highlight skill matches and gaps honestly.
+Suggest useful clarification questions.
+Generate a professional proposal focused on solving the client's problem.
+
+Do not invent experience or claim skills that are not provided by the freelancer.
+
+The proposal should:
+
+Address the client directly.
+Demonstrate understanding of the project.
+Explain the proposed technical approach.
+Highlight relevant skills.
+Maintain a professional freelance tone.
+
+
+---
+
+# 🛠️ Technologies & Tools Used
+
+## Frontend
+
+- React
+- TypeScript
+- Tailwind CSS
+- Vite
+- Lucide React
+
+---
+
+## Backend
+
+- Node.js
+- Express.js
+- TypeScript
+- ESBuild
+
+---
+
+## Database & Authentication
+
+### Firebase
+
+Used for:
+
+- User authentication
+- Firestore database
+- User-specific data storage
+- Security rules
+
+---
+
+## Artificial Intelligence
+
+### Google Gemini API
+
+Used for:
+
+- Job description analysis
+- Proposal generation
+- AI-powered freelance assistance
+
+---
+
+## Development Tools
+
+### Google AI Studio
+
+Used for:
+
+- AI-assisted application development
+- Vibe coding workflow
+- Gemini integration
+
+### Google Stitch
+
+Used for:
+
+- UI/UX design and application interface planning
+
+### GitHub
+
+Used for:
+
+- Source code management
+- Version control
+- Public project repository
+
+### Render
+
+Used for:
+
+- Live application deployment
+- Hosting backend and frontend application
+
+---
+
+# 🔒 Security Implementation
+
+The application follows secure development practices:
+
+- API keys are stored using environment variables
+- Gemini API calls are handled server-side
+- Firebase authentication protects user accounts
+- Firestore security rules isolate user data
+
+Users can only access:
+
+- Their own profile
+- Their own proposals
+- Their own clients
+
+---
+
+# 📸 Application Screenshots
+
+## 1. Authentication
+
+![Login](screenshots/login.png)
+
+User authentication through Google and Email/Password.
+
+---
+
+## 2. Dashboard
+
+![Dashboard](screenshots/dashboard.png)
+
+Main dashboard showing user activity and application overview.
+
+---
+
+## 3. AI Job Analysis
+
+![Job Analysis](screenshots/job-analysis.png)
+
+AI analyzes client requirements and extracts important project details.
+
+---
+
+## 4. AI Proposal Generation
+
+![Proposal Generation](screenshots/proposal-generation.png)
+
+Gemini generates a personalized freelance proposal.
+
+---
+
+## 5. Client Management
+
+![Client Management](screenshots/client-management.png)
+
+Users can manage clients and connect proposals.
+
+---
+
+# 🚀 How To Run The Project Locally
+
+## Prerequisites
+
+Install:
+
+- Node.js
+- npm or Bun
+- Git
+
+---
+
+## Clone Repository
+
+```bash
+git clone https://github.com/RafaqatMuneer/freelancepro-ai-app.git
+
+cd freelancepro-ai-app
+Install Dependencies
+
+Using npm:
+
+npm install
+
+or using Bun:
+
+bun install
+Configure Environment Variables
+
+Create a .env file:
+
+GEMINI_API_KEY=your_gemini_api_key
+Run Development Server
+npm run dev
+
+or:
+
+bun run dev
+Build Production Version
+npm run build
+Start Production Server
+npm run start
